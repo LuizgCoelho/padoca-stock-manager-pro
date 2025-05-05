@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Plus, LogOut, Archive, Edit, Search, Bell } from "lucide-react";
+import { Plus, LogOut, Archive, Edit, Search, Bell, ShoppingCart } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
@@ -82,7 +82,10 @@ const Dashboard = () => {
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-bakery-700">Padoca</h1>
+            <h1 className="text-2xl font-bold text-bakery-700 flex items-center">
+              <ShoppingCart size={24} className="mr-2 text-bakery-600" />
+              Padoca
+            </h1>
             <span className="ml-2 bg-bakery-100 text-bakery-700 px-2 py-1 text-xs rounded-md">
               Estoque
             </span>

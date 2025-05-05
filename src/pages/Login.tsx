@@ -5,7 +5,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, ShoppingCart } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const Login = () => {
@@ -44,7 +44,10 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center bakery-pattern">
       <div className="w-full max-w-md px-4">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-bakery-700">Padoca</h1>
+          <h1 className="text-4xl font-bold text-bakery-700 flex items-center justify-center">
+            <ShoppingCart size={32} className="mr-3 text-bakery-600" />
+            Padoca
+          </h1>
           <p className="text-bakery-600 mt-2">Sistema de Controle de Estoque</p>
         </div>
         
