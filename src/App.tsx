@@ -36,6 +36,31 @@ const AppRoutes = () => {
           </ProtectedRoute>
         } 
       />
+      {/* These routes will be handled by the Sidebar navigation */}
+      <Route 
+        path="/produtos" 
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/adicionar" 
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/baixo-estoque" 
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        } 
+      />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
