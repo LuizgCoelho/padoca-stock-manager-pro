@@ -44,11 +44,11 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center bakery-pattern">
       <div className="w-full max-w-md px-4">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-bakery-700 flex items-center justify-center">
+          <h1 className="text-4xl font-bold text-bakery-800 flex items-center justify-center">
             <ShoppingCart size={32} className="mr-3 text-bakery-600" />
             Padoca
           </h1>
-          <p className="text-bakery-600 mt-2">Sistema de Controle de Estoque</p>
+          <p className="text-bakery-700 mt-2">Sistema de Controle de Estoque</p>
         </div>
         
         <Card>
@@ -80,7 +80,7 @@ const Login = () => {
             <CardFooter>
               <Button
                 type="submit"
-                className="w-full bg-bakery-500 hover:bg-bakery-600"
+                className="w-full bg-bakery-600 hover:bg-bakery-700"
                 disabled={isLoading}
               >
                 {isLoading ? "Entrando..." : "Entrar"}

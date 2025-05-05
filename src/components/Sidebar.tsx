@@ -22,7 +22,7 @@ const Sidebar = () => {
       <div className="p-4 border-b border-border">
         <div className="flex items-center space-x-2 mb-1">
           <ShoppingCart size={24} className="text-bakery-600" />
-          <h1 className="text-xl font-bold text-bakery-700">Padoca</h1>
+          <h1 className="text-xl font-bold text-bakery-800">Padoca</h1>
         </div>
         <p className="text-sm text-muted-foreground">Estoque Mágico</p>
       </div>
